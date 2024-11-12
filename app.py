@@ -21,7 +21,7 @@ ai_client = TextAnalyticsClient(endpoint=AI_ENDPOINT, credential=credential)
 def classify_text(query):
     batched_documents = [query]
     operation = ai_client.begin_single_label_classify(
-        batched_documents, project_name="ClassifyMentals", deployment_name="MyDeployment"
+        batched_documents, project_name="ClassifyLab", deployment_name="MyDeployment"
     )
     document_results = operation.result()
     for classification_result in document_results:
