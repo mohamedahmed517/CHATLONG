@@ -7,7 +7,7 @@ from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
 
 # Initialize Streamlit and API configurations
-st.title("Chezlong - Arabic Mental Health Chatbot")
+st.title("Chatlong - Arabic Mental Health Chatbot")
 os.environ['GOOGLE_API_KEY'] = "AIzaSyCAohxd0-C1bhSIC05p7xh03Gi0OLVAcnk"
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 gemini_model = genai.GenerativeModel('gemini-pro')
